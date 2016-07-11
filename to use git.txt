@@ -1,0 +1,3 @@
+Git使用する際には起動ごとにコンソールに以下のコマンドを入力しましょう
+
+export https_proxy=proxy.noc.titech.ac.jp:3128

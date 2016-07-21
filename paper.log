@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.6.27)  11 JUL 2016 13:41
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.7.21)  21 JUL 2016 15:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./paper.tex
 (./paper.tex
-pLaTeX2e <2016/06/10>+1 (based on LaTeX2e <2016/03/31> patch level 2)
+pLaTeX2e <2016/07/01> (based on LaTeX2e <2016/03/31> patch level 2)
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (c:/texlive/2016/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 Document Class: jsarticle 2014/02/07 okumura
@@ -42,7 +42,7 @@ LaTeX Info: Redefining \LaTeX on input line 1757.
 LaTeX Info: Redefining \LaTeXe on input line 1782.
 \heisei=\count89
 ) (c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/10 v2.15b AMS math features
+Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
@@ -107,7 +107,7 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
 )
 (c:/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/06/02 v1.0s Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
 (c:/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -117,21 +117,15 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 99.
 
-(c:/texlive/2016/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def
-File: dvipdfmx.def 2016/06/22 v4.09 LaTeX color/graphics driver for dvipdfmx (T
-eX Live/ChoF)
-
-(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
+(c:/texlive/2016/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2016/07/11 v4.12 LaTeX color/graphics driver for dvipdfmx (L
+3/ChoF)
+))
 \Gin@req@height=\dimen131
 \Gin@req@width=\dimen132
 )
 (c:/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/06/02 v1.1d Standard LaTeX Color (DPC)
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
 (c:/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -151,8 +145,8 @@ Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
@@ -366,91 +360,68 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 44.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 75.
+(Font)              scaled to size 9.60999pt on input line 74.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 75.
+(Font)              scaled to size 9.60999pt on input line 74.
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 75.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 74.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 75.
+(Font)              scaled to size 9.60999pt on input line 74.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 75.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 74.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 75.
+(Font)              scaled to size 9.60999pt on input line 74.
 [1
 
 ]
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 89.
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
-[]
- []
-
+(Font)              scaled to size 6.72699pt on input line 127.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 151.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 154.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 151.
+(Font)              scaled to size 9.60999pt on input line 154.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 151.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 154.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 151.
+(Font)              scaled to size 9.60999pt on input line 154.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 169--172
-[]
- []
-
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 154.
+ [2]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 178.
+(Font)              scaled to size 6.72699pt on input line 184.
 File: fig2-cnm-joins-time-series.pdf Graphic file (type pdf)
-<fig2-cnm-joins-time-series.pdf>
+ <fig2-cnm-joins-time-series.pdf>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 200.
+(Font)              scaled to size 4.805pt on input line 206.
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 216--219
-[]
- []
-
 File: fig3-cnm-ratio-join.png Graphic file (type bmp)
-<fig3-cnm-ratio-join.png>
-Overfull \hbox (9.39043pt too wide) in paragraph at lines 240--247
+ <fig3-cnm-ratio-join.png>
+Overfull \hbox (9.39043pt too wide) in paragraph at lines 251--258
 []\JY1/mc/m/n/10 不均衡な合併はデンドログラムの高さを成長させ 、 [][][]で
  []
 
 
-Overfull \hbox (45.50192pt too wide) in paragraph at lines 240--247
+Overfull \hbox (45.50192pt too wide) in paragraph at lines 251--258
 \JY1/mc/m/n/10 はなく 、 [][][]となり[][][]と
  []
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 293--296
+Underfull \hbox (badness 10000) in paragraph at lines 304--307
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--300
+Underfull \hbox (badness 10000) in paragraph at lines 308--311
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--305
+Underfull \hbox (badness 10000) in paragraph at lines 313--316
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--326
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--332
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 335--338
+Underfull \hbox (badness 10000) in paragraph at lines 334--337
 []
  []
 
@@ -459,58 +430,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--343
 []
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--349
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--354
+[]
+ []
+
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 344--347
+Underfull \hbox (badness 10000) in paragraph at lines 355--358
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--351
+Underfull \hbox (badness 10000) in paragraph at lines 359--362
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--355
+Underfull \hbox (badness 10000) in paragraph at lines 363--366
 []
  []
 
 [7]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 369.
+(Font)              scaled to size 11.53198pt on input line 380.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 369.
+(Font)              scaled to size 11.53198pt on input line 380.
  [8]
 No file paper.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 454.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 465.
 [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 454.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 465.
  (./paper.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 454.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 454.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 465.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 465.
+Package rerunfilecheck Info: File `paper.out' has not changed.
+(rerunfilecheck)             Checksum: D3531C1D8BFC3EAFE015193F6D77AF9D;279.
 
-
-Package rerunfilecheck Warning: File `paper.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `paper.out':
-(rerunfilecheck)             Before: F50F313D1DF748380A030E95B603A720;285
-(rerunfilecheck)             After:  D3531C1D8BFC3EAFE015193F6D77AF9D;279.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 454.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 465.
  ) 
 Here is how much of TeX's memory you used:
- 5980 strings out of 493682
- 86049 string characters out of 6152628
- 180887 words of memory out of 5000000
- 9490 multiletter control sequences out of 15000+600000
+ 5973 strings out of 493683
+ 85784 string characters out of 6152647
+ 180797 words of memory out of 5000000
+ 9488 multiletter control sequences out of 15000+600000
  20631 words of font info for 90 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  31i,11n,28p,284b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper.dvi (9 pages, 37508 bytes).
+Output written on paper.dvi (9 pages, 40652 bytes).

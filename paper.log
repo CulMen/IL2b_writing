@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.7.21)  1 AUG 2016 10:20
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.7.21)  1 AUG 2016 10:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -387,52 +387,33 @@ File: fig3-cnm-ratio-join.png Graphic file (type bmp)
 File: fig5-all-etime-size.pdf Graphic file (type pdf)
 
 <fig5-all-etime-size.pdf>
-Underfull \hbox (badness 10000) in paragraph at lines 342--345
-[]
- []
+File: fig5-all-etime-size.pdf Graphic file (type pdf)
+ <fig5-all-etime-size.pdf>
+File: fig7-hn-ratio-join-500K.png Graphic file (type bmp)
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--351
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 372--375
-[]
- []
-
-[6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 376--379
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 380--383
-[]
- []
-
+<fig7-hn-ratio-join-500K.png> [6] [7] [8]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 397.
+(Font)              scaled to size 11.53198pt on input line 396.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 397.
-[8] [9] (./paper.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 482.
+(Font)              scaled to size 11.53198pt on input line 396.
+ [9] (./paper.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 481.
  [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 482.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 481.
  (./paper.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 482.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 482.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 481.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 481.
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D3531C1D8BFC3EAFE015193F6D77AF9D;279.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 482.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 481.
  ) 
 Here is how much of TeX's memory you used:
- 5976 strings out of 493683
- 85915 string characters out of 6152647
- 183934 words of memory out of 5000000
- 9488 multiletter control sequences out of 15000+600000
+ 5980 strings out of 493683
+ 86059 string characters out of 6152647
+ 183010 words of memory out of 5000000
+ 9490 multiletter control sequences out of 15000+600000
  20041 words of font info for 87 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 31i,11n,28p,284b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,11n,28p,284b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on paper.dvi (10 pages, 43880 bytes).
+Output written on paper.dvi (10 pages, 44448 bytes).

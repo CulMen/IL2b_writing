@@ -338,16 +338,16 @@ HEとHE'は$G_{\text{mixi}}^{\text{1,000K}}$に対してそれぞれ、36分と3
   \end {center}
 \end {table}
 
-\begin{figure}[htbp]
-\begin {空欄ブロック}{図6 スケーラビリティ}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+\begin {figure}[htbp]
+  \centerline {\includegraphics [width=0.80\linewidth]{fig5-all-etime-size.pdf}}
+  \caption {スケーラビリティ}
+  \label {fig: scalability}
 \end{figure}
 
-\begin{figure}[htbp]
-\begin {空欄ブロック}{図7 HNにおけるクラスターの}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+\begin {figure}[htbp]
+  \centerline {\includegraphics [width=0.80\linewidth]{fig7-hn-ratio-join-500K.png}}
+  \caption {HNにおけるクラスターの合併比率の推移（片対数）}
+  \label {fig: cluster move}
 \end{figure}
 
 \begin {table}
@@ -369,17 +369,16 @@ HEとHE'は$G_{\text{mixi}}^{\text{1,000K}}$に対してそれぞれ、36分と3
 しかし、表\ref{tbl: compete module}に見るように、HE'ではCNM法よりも若干であるがモジュール性が上回った。
 この結果より、HE'法では$G_{\text{mixi}}^{\text{1,000K}}$において、CNM法の7倍の速度性能を持ち、モジュール性においても8−11\%の向上が見られ、速度面・モジュール性の両面でCNM法を上回る事ができた。
 
-\begin {空欄ブロック}{HN法は、速度面において}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+HN法は、速度面においてHEよりも若干の性能を有すが、モジュール性においてはCNM法の21\%−28\%劣る結果となった。
 
-\begin {空欄ブロック}{図7にHNの}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+図\ref{fig: cluster move}にHNの$G_{\text{mixi}}^{\text{500K}}$の解析プロセスにおける各合併ごとの合併比率を示す。
+この図からわかるように、CNM法と比べ劇的に合併比率の偏りを抑えることができた。
 
-\begin {空欄ブロック}{われわれはさらに}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+われわれはさらに2006年10月に取得した約550万ユーザーからなるmixiネットワークに提案するヒューリスティクを適用した。
+図\ref{fig: scalability}はそのときの実行時間である。
+この図より、HEとHNはほぼ線形で実行時間が増加していることがわかる。
+一方HE'は、他の2つよりも遅いが、それでもなお550万ノードに対しても実用的な時間での解析が可能であった。
+われわれの手法のスケーラビリティは、物理メモリサイズにより制約されており、HE法とHN法は物理メモリ不足のため550万ノードが実行できなかった。
 
 
 \section {まとめ}

@@ -47,20 +47,20 @@ Clauset，Newman，Mooreはネットワークをボトムアップかつ貪欲�
 クラスタ構造の抽出は、複雑な社会ネットワークからその固有の性質を知るう
 えでの最初の重要なステップであり、今までに数々の研究がなされてい
 る。
-\cite{Kleinberg99,
-  Page99,
-  Dean99,
-  Kumar99,
-  Miller01,
-  Toyoda01,
-  Wu04,
-  Cai04,
-  Clauset04,
-  Onsjo06}
+\cite{kleinberg-1999-authoritative-sources-in-a-hyperlinked-environment,
+  page-1999-the-pagerank-citation-ranking:-bringing-order,
+  dean-1999-finding-related-pages-in-the-world-wide,
+  kumar-1999-trawling-the-web-for-emerging-cyber-communities,
+  miller-2001-modifications-of-kleinbergs-hits-algorithm-using,
+  toyoda-2001-creating-a-web-community-chart-for-navigating-related,
+  wu-2004-finding-communities-in-linear-time:-a-physics,
+  cai-2004-block-level-link-analysis,
+  clauset-2004-finding-community-structure-in-very-large,
+  onsjo-2006-a-simple-message-passing-algorithm-for-graph}
 
 
 われわれは、Clauset, Newman, Moore によって提案された手法(CMM法)
-\cite{Clauset04}
+\cite{clauset-2004-finding-community-structure-in-very-large}
 を実装し、Social Networking Service(SNS)より取得したネットワークのさまざまな部分集合に対しての解析を試みた。
 50万ユーザー以下での解析は可能だった。
 しかし、さらに大きなネットワークでは実用的な時間での解析は不可能であった。
@@ -89,15 +89,25 @@ Clauset，Newman，Mooreはネットワークをボトムアップかつ貪欲�
 
 \emph{クラスタ}を抽出する手法は大きく分けて二つある。
 一つは、グラフよりいくつかのノードを\emph{種}として選び、それを含むクラスタを返す手法
-\cite{Kleinberg99,Dean99,Miller01,Toyoda01}である。
+\cite{kleinberg-1999-authoritative-sources-in-a-hyperlinked-environment,
+dean-1999-finding-related-pages-in-the-world-wide,
+miller-2001-modifications-of-kleinbergs-hits-algorithm-using,
+toyoda-2001-creating-a-web-community-chart-for-navigating-related}
+である。
 もう一つは、ネットワーク全体をクラスタに分割する手法
-\cite{Page99,Kumar99,Wu04,Clauset04,Cai04,Onsjo06}である。
+\cite{page-1999-the-pagerank-citation-ranking:-bringing-order,
+kumar-1999-trawling-the-web-for-emerging-cyber-communities,
+wu-2004-finding-communities-in-linear-time:-a-physics,
+clauset-2004-finding-community-structure-in-very-large,
+cai-2004-block-level-link-analysis,
+onsjo-2006-a-simple-message-passing-algorithm-for-graph}
+である。
 
 前者の手法は主にウェブの解析に使われている。ウェブの解析は、各ウェブペー
 ジをノード、ハイパーリンクを\emph {エッジ}とした有向グラフとしてウェブ
 をとらえ、解析する。Kleinbergが提案した\emph {HITS} \cite{
-  Gibson98,
-  Kleinberg99}
+  gibson-1998-inferring-web-communities-from-link-topology,
+  kleinberg-1999-authoritative-sources-in-a-hyperlinked-environment}
 は、ウェブの適当な部
 分グラフの中からハイパーリンクで密に結合された\emph {オーソリティ}およ
 び\emph {ハブ}を抽出する手法である。オーソリティとは、多くのペー
@@ -107,14 +117,14 @@ Clauset，Newman，Mooreはネットワークをボトムアップかつ貪欲�
 ティおよびハブのスコアを計算する。
 
 後者の手法としてさまざまな提案がなされている。Kumarらによる\emph
-{Trawling} \cite{Kumar99}
+{Trawling} \cite{kumar-1999-trawling-the-web-for-emerging-cyber-communities}
 は特によく知られている。彼らは、2 億ページ以上の大規
 模なウェブのアーカイブに対してこの手法を適用し、10万個を越えるクラスタ
 の\emph {コア}を発見した。コアとはオーソリティとハブから成るサイズの小
 さい%:\emph {完全２部グラフ}:%であり，ほとんどのクラスタがコアを含むという
 仮定に基づいている。Clausetらにより提案された手法（CNMアルゴリ
 ズム）
-\cite{Clauset04}
+\cite{clauset-2004-finding-community-structure-in-very-large}
 は、本研究と関連が深いため、次節で説明する。
 
 
@@ -127,11 +137,11 @@ Clauset，Newman，Mooreはネットワークをボトムアップかつ貪欲�
 NewmanとGirvanは、グラフ$G$に対するクラスタ
 リング$\clustering$が与えられたときに、そのクラスタリングの優劣を評価す
 るための指標として\emph {モジュール性}$Q(G,\clustering)$を定義し\cite
-{Newman04}
+{newman-2004-finding-and-evaluating-community-structure-in-networks}
 、モジュール性を指標として貪
 欲にクラスタを合併する手法を提案した。のちにClauset，Newman，Mooreらは
 それにデータ構造上の改善を施した案を提案した(CNM法)
-\cite{Clauset04}。
+\cite{clauset-2004-finding-community-structure-in-very-large}。
 
 CNM法では、まずそれぞれのノードを独立したクラスタとして表す。
 そして、全クラスタ対$(c_i, c_j)$について、それらを合併したときのモジュー
@@ -165,7 +175,7 @@ CNM法は、最大値を保持する$\DQ \clustering {c_i} {c_j}$を反復
 \>\>\clustering\ := $\mathit {Join}(c_i, c_j)$;\\
 \>\}
 \end {tabbing}
-\caption {CNM法\cite{Clauset04}の概略}
+\caption {CNM法\cite{clauset-2004-finding-community-structure-in-very-large}の概略}
 \label {fig: cnm algorithm}
 \end {figure}
 
@@ -186,7 +196,7 @@ Clauset らは、この手法を用いて Amazon.com から得た数十万ノー
 実験環境として、Intel Xeon 2.80GHz，L2 cache＝2MB，メモリ＝4GBを用い
 た。
 
-実験の結果\cite{Clauset04}で示唆される高効
+実験の結果\cite{clauset-2004-finding-community-structure-in-very-large}で示唆される高効
 率に反して予想外に解析時間がかかり、1週間で全体の10\%
 程度の解析しかすることができなかった。
 
@@ -219,7 +229,8 @@ $G_{\text {mixi}} = (U, F)$
 る。それぞれのデータセットでは、解析の前半で合併に要する時間がかかり、
 後半で劇的に減少していることが分かる。
 
-\cite{Clauset04}はCNM法の計算量が$O(md\text{log}~n)$と述べている。
+\cite{clauset-2004-finding-community-structure-in-very-large}
+はCNM法の計算量が$O(md\text{log}~n)$と述べている。
 ここで$n$はノード数、$m$は全エッジ数、$d$はデンドログラムの高さである。
 また、疎な社会ネットワークにおいて、$m$を$n$、$d$をlog~$n$と近似でき、
 計算量は$O(n\text{log}^2 n)$となると予想している。
@@ -299,7 +310,7 @@ $O(n^2\text{log}n)$
 \begin{description}
 	\item[HE]  $c_i$の隣接クラスタ数
 	\item[HN]  $c_i$内のノード数
-	\item[HE']  HEとCNM法を混同させた定義\footnote{詳細は \cite{Wakita07}をご覧ください。}
+	\item[HE']  HEとCNM法を混同させた定義\footnote{詳細は \cite{wakita-2007-finding-community-structure-in-mega-scale-social}をご覧ください。}
 \end{description}
 
 
@@ -338,16 +349,16 @@ HEとHE'は$G_{\text{mixi}}^{\text{1,000K}}$に対してそれぞれ、36分と3
   \end {center}
 \end {table}
 
-\begin{figure}[htbp]
-\begin {空欄ブロック}{図6 スケーラビリティ}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+\begin {figure}[htbp]
+  \centerline {\includegraphics [width=0.80\linewidth]{fig5-all-etime-size.pdf}}
+  \caption {スケーラビリティ}
+  \label {fig: scalability}
 \end{figure}
 
-\begin{figure}[htbp]
-\begin {空欄ブロック}{図7 HNにおけるクラスターの}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+\begin {figure}[htbp]
+  \centerline {\includegraphics [width=0.80\linewidth]{fig7-hn-ratio-join-500K.png}}
+  \caption {HNにおけるクラスターの合併比率の推移（片対数）}
+  \label {fig: cluster move}
 \end{figure}
 
 \begin {table}
@@ -369,17 +380,16 @@ HEとHE'は$G_{\text{mixi}}^{\text{1,000K}}$に対してそれぞれ、36分と3
 しかし、表\ref{tbl: compete module}に見るように、HE'ではCNM法よりも若干であるがモジュール性が上回った。
 この結果より、HE'法では$G_{\text{mixi}}^{\text{1,000K}}$において、CNM法の7倍の速度性能を持ち、モジュール性においても8−11\%の向上が見られ、速度面・モジュール性の両面でCNM法を上回る事ができた。
 
-\begin {空欄ブロック}{HN法は、速度面において}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+HN法は、速度面においてHEよりも若干の性能を有すが、モジュール性においてはCNM法の21\%−28\%劣る結果となった。
 
-\begin {空欄ブロック}{図7にHNの}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+図\ref{fig: cluster move}にHNの$G_{\text{mixi}}^{\text{500K}}$の解析プロセスにおける各合併ごとの合併比率を示す。
+この図からわかるように、CNM法と比べ劇的に合併比率の偏りを抑えることができた。
 
-\begin {空欄ブロック}{われわれはさらに}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+われわれはさらに2006年10月に取得した約550万ユーザーからなるmixiネットワークに提案するヒューリスティクを適用した。
+図\ref{fig: scalability}はそのときの実行時間である。
+この図より、HEとHNはほぼ線形で実行時間が増加していることがわかる。
+一方HE'は、他の2つよりも遅いが、それでもなお550万ノードに対しても実用的な時間での解析が可能であった。
+われわれの手法のスケーラビリティは、物理メモリサイズにより制約されており、HE法とHN法は物理メモリ不足のため550万ノードが実行できなかった。
 
 
 \section {まとめ}
@@ -403,80 +413,6 @@ HEとHE'は$G_{\text{mixi}}^{\text{1,000K}}$に対してそれぞれ、36分と3
 
 \bibliographystyle {jplain} % 文献リストの書式の設定。jplainは最も標準的な書式です。
 % pbibtex コマンドを用いて文献リストを作成するために、\bibliography コマンドで文献データベースを指定します。ここでは、references.bib という文献データベースを用いてリストを作成することを指示しています。
-
-\begin{thebibliography}{10}
-
-\bibitem{Cai04}
-Deng~Cai, Xiaofei~He, Ji-Rong~Wen, and Wei-Ying Ma.
-\newblock Block-level link analysis.
-\newblock in {\em Proceedings of the 27th Annual International ACM SIGER Conference on Research and Development in Infornation Retrieval,}
-\newblock SIGER '04, pp. 440-447, New York, NY, USA, 2004. ACM.
-
-\bibitem{Clauset04}
-A.~Clauset, M.~E.~J. Newman, and C.~Moore.
-\newblock Finding community structure in very large networks.
-\newblock {\em Physical Review E, Statistical, Nonlinear, and Soft Matter Physics}, Vol.~70, p. 066111, 2004.
-
-\bibitem{Dean99}
-Jeffery~Dean and Monika~R. Henzinger.
-\newblock Finding related pages in the world wide web.
-\newblock In {\em Computer Networks},Vol.~31, No.~11-16, pp. 1467--1479, 1999.
-
-\bibitem{Gibson98}
-David~Gibson, Jon~Kleinberg, and Prabhakar~Raghavan.
-\newblock Inferring Web communities from link topology.
-\newblock In {\em Proceedings of the Ninth ACM Conference on Hypertext and Hypermedia : Links, Objects, Time and Space — structure in Hypermedia Systems: Links, Objects, Time and Space—structure in Hypermedia Systems},
-\newblock HYPERTEXT '98, pp.~225-234, New~York, NY, USA, 1998, ACM.
-
-\bibitem{Kleinberg99}
-Jon~M.~Kleinberg.
-\newblock Authoritative sources in a hyperlinked environment.
-\newblock {\em J.~ACM}, Vol.~46, No.~5, pp.~604-632, September 1999.
-
-\bibitem{Kumar99}
-Ravi~Kumar, Prabhakar~Raghavan, Sridhar~Rajagopalan, and Andrew~Tomkins.
-\newblock Trawling the Web for emerging cyber-communities.
-\newblock {\em Computer networks}, Vol.~31, No.~11, pp.~1481-1493, May 1999.
-
-\bibitem{Miller01}
-Joel~C.~Miller, Gregory~Rae, Fred~Schaefer, Lesley~A.~Ward, Thomas~LoFaro, and Ayman~Farahat.
-\newblock Modifications of Kleinberg's HITS algorithm using matrix exponentiation and web log records.
-\newblock In {\em Proceedings of the 24th Annual International ACM SIGER Conference on Research and Development in Information Retrieval},
-\newblock SIGER '01, pp.~444-445, New~York, NY, USA, 2001, ACM.
-
-\bibitem{Newman04}
-M.~E.~J.~Newman and M.~Girvan.
-\newblock Finding and evaluating community structure in net-works.
-\newblock {\em Physical Review. E, Statistical, Nonlinear, and Soft Matter Physics}, Vol.~69, p.~026113 (16 pages), 2004
-
-\bibitem{Onsjo06}
-Mikael~Onsj\"o and Osamu~Watanabe.
-\newblock A simple message passing algorithm for graph partitioning problems.
-\newblock In Tetsuo~Asano, editor, {\em in Proceedings of 17th International symposium, ISAAC 2006}, Vol.~4288 of LNCS, pp.~507-516, Kolkata, India, December 2006, Springer.
-
-\bibitem{Page99}
-Lawrence~Page, Sergey~Brin, Rajev~Motwani, and Terry~Winograd.
-\newblock The PageRank citation ranking: Bringing order to the Web.
-\newblock Technical Report 1999-66, Stanford InfoLab, November 1999.
-
-\bibitem{Toyoda01}
-Masashi~Toyoda and Masaru~Kitsuregawa.
-\newblock Creating a Web Community chart for navigating related communities.
-\newblock In {\em Proceedings of the 12th ACM Conference on Hypertext and hypermedia}, HIPERTEXT '01, pp.~103-112. New~York, NY, USA, 2001, ACM.
-
-\bibitem{Wakita07}
-Ken~Wakita and Toshiyuki~Tsurumi.
-\newblock Finding community structure in mega-scale social networks:[extended abstract].
-\newblock In {\em Proceedings of the 16th international conference on World Wide Web}, pp.~1275-1276. ACM, 2007.
-
-\bibitem{Wu04}
-Fang~Wu and Bernardo~A~Huberman.
-\newblock Finding communities in linear time: a physics approach.
-\newblock {\em The European Physical Journal B-Condensed Matter and Complex Systems}, Vol.~38, No.~2, pp.~331-338, 2004.
-
-\end {thebibliography}
-
-
 \bibliography {references}
 
 \end {document}

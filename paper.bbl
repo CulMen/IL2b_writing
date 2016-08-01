@@ -1,4 +1,73 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{cai-2004-block-level-link-analysis}
+Deng Cai, Xiaofei He, Ji-Rong Wen, and Wei-Ying Ma.
+\newblock Block-level link analysis.
+\newblock In {\em Proceedings of the 27th Annual International {ACM SIGIR}
+  Conference on Research and Development in Information Retrieval}, SIGIR '04,
+  pp. 440--447, New York, NY, USA, 2004. ACM.
+
+\bibitem{clauset-2004-finding-community-structure-in-very-large}
+A.~Clauset, M.~E.~J. Newman, and C.~Moore.
+\newblock Finding community structure in very large networks.
+\newblock {\em Physical Review. E, Statistical, Nonlinear, and Soft Matter
+  Physics}, Vol.~70, p. 066111 (6 pages), 2004.
+
+\bibitem{dean-1999-finding-related-pages-in-the-world-wide}
+Jeffrey Dean and Monika~R Henzinger.
+\newblock Finding related pages in the {World Wide Web}.
+\newblock {\em Computer Networks}, Vol.~31, No. 11--16, pp. 1467 -- 1479, 1999.
+
+\bibitem{gibson-1998-inferring-web-communities-from-link-topology}
+David Gibson, Jon Kleinberg, and Prabhakar Raghavan.
+\newblock Inferring {Web} communities from link topology.
+\newblock In {\em Proceedings of the Ninth ACM Conference on Hypertext and
+  Hypermedia : Links, Objects, Time and Space---structure in Hypermedia
+  Systems: Links, Objects, Time and Space---structure in Hypermedia Systems},
+  HYPERTEXT '98, pp. 225--234, New York, NY, USA, 1998. ACM.
+
+\bibitem{kleinberg-1999-authoritative-sources-in-a-hyperlinked-environment}
+Jon~M. Kleinberg.
+\newblock Authoritative sources in a hyperlinked environment.
+\newblock {\em J. ACM}, Vol.~46, No.~5, pp. 604--632, September 1999.
+
+\bibitem{kumar-1999-trawling-the-web-for-emerging-cyber-communities}
+Ravi Kumar, Prabhakar Raghavan, Sridhar Rajagopalan, and Andrew Tomkins.
+\newblock Trawling the {Web} for emerging cyber-communities.
+\newblock {\em Computer networks}, Vol.~31, No.~11, pp. 1481--1493, May 1999.
+
+\bibitem{miller-2001-modifications-of-kleinbergs-hits-algorithm-using}
+Joel~C. Miller, Gregory Rae, Fred Schaefer, Lesley~A. Ward, Thomas LoFaro, and
+  Ayman Farahat.
+\newblock Modifications of {Kleinberg's HITS} algorithm using matrix
+  exponentiation and web log records.
+\newblock In {\em Proceedings of the 24th Annual International ACM SIGIR
+  Conference on Research and Development in Information Retrieval}, SIGIR '01,
+  pp. 444--445, New York, NY, USA, 2001. ACM.
+
+\bibitem{newman-2004-finding-and-evaluating-community-structure-in-networks}
+M.~E.~J. Newman and M.~Girvan.
+\newblock Finding and evaluating community structure in networks.
+\newblock {\em Physical Review. E, Statistical, Nonlinear, and Soft Matter
+  Physics}, Vol.~69, p. 026113 (16 pages), 2004.
+
+\bibitem{onsjo-2006-a-simple-message-passing-algorithm-for-graph}
+Mikael Onsj{\"o} and Osamu Watanabe.
+\newblock A simple message passing algorithm for graph partitioning problems.
+\newblock In Tetsuo Asano, editor, {\em in Proceedings of 17th International
+  symposium, {ISAAC} 2006}, Vol. 4288 of {\em {LNCS}}, pp. 507--516, Kolkata,
+  India, December 2006. Springer.
+
+\bibitem{page-1999-the-pagerank-citation-ranking:-bringing-order}
+Lawrence Page, Sergey Brin, Rajeev Motwani, and Terry Winograd.
+\newblock The {PageRank} citation ranking: Bringing order to the {Web}.
+\newblock Technical Report 1999-66, Stanford InfoLab, November 1999.
+
+\bibitem{toyoda-2001-creating-a-web-community-chart-for-navigating-related}
+Masashi Toyoda and Masaru Kitsuregawa.
+\newblock Creating a {Web} community chart for navigating related communities.
+\newblock In {\em Proceedings of the 12th {ACM} Conference on Hypertext and
+  hypermedia}, HYPERTEXT '01, pp. 103--112, New York, NY, USA, 2001. ACM.
 
 \bibitem{wakita-2007-finding-community-structure-in-mega-scale-social}
 Ken Wakita and Toshiyuki Tsurumi.
@@ -6,5 +75,11 @@ Ken Wakita and Toshiyuki Tsurumi.
   abstract].
 \newblock In {\em Proceedings of the 16th international conference on World
   Wide Web}, pp. 1275--1276. ACM, 2007.
+
+\bibitem{wu-2004-finding-communities-in-linear-time:-a-physics}
+Fang Wu and Bernardo~A Huberman.
+\newblock Finding communities in linear time: a physics approach.
+\newblock {\em The European Physical Journal B-Condensed Matter and Complex
+  Systems}, Vol.~38, No.~2, pp. 331--338, 2004.
 
 \end{thebibliography}

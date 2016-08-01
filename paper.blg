@@ -1,0 +1,61 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: paper.aux
+The style file: jplain.bst
+Database file #1: references.bib
+Warning--I didn't find a database entry for "Kleinberg99"
+Warning--I didn't find a database entry for "Page99"
+Warning--I didn't find a database entry for "Dean99"
+Warning--I didn't find a database entry for "Kumar99"
+Warning--I didn't find a database entry for "Miller01"
+Warning--I didn't find a database entry for "Toyoda01"
+Warning--I didn't find a database entry for "Wu04"
+Warning--I didn't find a database entry for "Cai04"
+Warning--I didn't find a database entry for "Clauset04"
+Warning--I didn't find a database entry for "Onsjo06"
+Warning--I didn't find a database entry for "Gibson98"
+Warning--I didn't find a database entry for "Newman04"
+Warning--I didn't find a database entry for "Wakita07"
+You've used 1 entry,
+            2620 wiz_defined-function locations,
+            625 strings with 4982 characters,
+and the built_in function-call counts, 579 in all, are:
+= -- 58
+> -- 12
+< -- 1
++ -- 5
+- -- 4
+* -- 29
+:= -- 77
+add.period$ -- 4
+call.type$ -- 1
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 32
+empty$ -- 52
+format.name$ -- 6
+if$ -- 139
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 11
+preamble$ -- 1
+purify$ -- 4
+quote$ -- 0
+skip$ -- 30
+stack$ -- 0
+substring$ -- 45
+swap$ -- 13
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 4
+warning$ -- 0
+while$ -- 5
+width$ -- 2
+write$ -- 14
+is.kanji.str$ -- 11
+(There were 13 warnings)

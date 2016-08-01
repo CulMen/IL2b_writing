@@ -219,9 +219,9 @@ $G_{\text {mixi}} = (U, F)$
 る。それぞれのデータセットでは、解析の前半で合併に要する時間がかかり、
 後半で劇的に減少していることが分かる。
 
-\cite{Clauset04}はCNM法の計算量が$O(md\text{log}n)$と述べている。
+\cite{Clauset04}はCNM法の計算量が$O(md\text{log}~n)$と述べている。
 ここで$n$はノード数、$m$は全エッジ数、$d$はデンドログラムの高さである。
-また、疎な社会ネットワークにおいて、$m$を$n$、$d$をlog$n$と近似でき、
+また、疎な社会ネットワークにおいて、$m$を$n$、$d$をlog~$n$と近似でき、
 計算量は$O(n\text{log}^2 n)$となると予想している。
 一方、われわれの実験した実行時間の結果である図\ref{fig: newman time diff}のデータに対して
 $f(x) = ax^b$を最小二乗近似した結果、$a = 1.51\cdot10^{-8} \pm2.06\cdot10^{-8}$,
@@ -233,27 +233,32 @@ $b = 2.13\pm0.104$と2次のオーダーで上昇することがわかった。�
 とにより急速に成長していることが観測でき、この現象のために不均衡なデン
 ドログラムが作られていることが分かった。
 
-図\ref {fig: clauset ratio}は$G_{\text {mixi}}^{\text {500K}}$の解析プ
-ロセスにおける各合併ごとの\emph {合併比率}を、片対数グラフにプロットし
-た結果である。合併比率の定義を以下に示す。
-\[\text{ratio}(c_{\text{i}},c_{\text{j}}) = \text{min}(|c_i|/|c_j|,|c_i|,|c_j|)\]%textは複数(乗算にしない)
-
 \begin {figure}[htbp]
   \centerline {\includegraphics [width=0.80\linewidth]{fig3-cnm-ratio-join.png}}
   \caption {CNM法におけるクラスターの合併比率の推移（片対数）}
   \label {fig: clauset ratio}
 \end{figure}
 
-%\begin {空欄ブロック}{図3はn回目の合併を}
-修正箇所：この個所を適切に書き換えなさい。
-%\end {空欄ブロック}
+図\ref {fig: clauset ratio}は$G_{\text {mixi}}^{\text {500K}}$の解析プ
+ロセスにおける各合併ごとの\emph {合併比率}を、片対数グラフにプロットし
+た結果である。合併比率の定義を以下に示す。
+
+\begin {align*}
+  \text{ratio}(c_i,c_j) = \text{min}(|c_i|/|c_j|,|c_j|/|c_i|) \\
+\end {align*}
+
+図\ref{fig: clauset ratio}は$n$回目の合併を、$c_k=Join(c_i,c_j)$とすると、$(n,\text{ratio}(c_i,c_j))$
+にプロットしている。$|c|$はクラスタのサイズである。
+この図より、解析の前半で、8つの巨大なクラスタの成長を観測できた。
+われわれはこの偏って成長したクラスタがCNM法をmixiネットワークに適用したときの主な計算速度劣化の原因と考えた。
+
 
 不均衡な合併はデンドログラムの高さを成長させ、
-\空欄 {修正箇所：この個所を適切に書き換えなさい}
+$d\approx$log$n$
 ではなく、
-\空欄 {修正箇所：この個所を適切に書き換えなさい}
+$d\approx n$
 となり
-\空欄 {修正箇所：この個所を適切に書き換えなさい}
+$O(n^2\text{log}n)$
 となる。
 
 
@@ -274,7 +279,7 @@ $b = 2.13\pm0.104$と2次のオーダーで上昇することがわかった。�
 \>\>\clustering\ := $\mathit {Join}(c_i, c_j)$;\\
 \>\}
 \end {tabbing}
-  \caption {提案手法の概a略}
+  \caption {提案手法の概略}
   \label {fig: tw algorithm}
 \end {figure}
 
@@ -301,18 +306,21 @@ $b = 2.13\pm0.104$と2次のオーダーで上昇することがわかった。�
 \section {評価}
 \label {sect: evaluation}
 
-\begin {空欄ブロック}{本節では、CNM法と前節で紹介した3種類の}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+本節では、CNM法と前節で紹介した3種類のヒューリスティック(HE、HE'、HN)を用いた手法の評価を行う。
+実験環境として、Intel Xeon 2.80GHz、メモリ4GBを用い、Linux(Red Hat Linux version 2.6.16)上で実験した。
+4種類の手法の実装言語にはJava(Java 5.0, Java HotSpot Server VM build 1.5.0\_06 b-05)を用いた。
+また、XeonはCPUを複数内蔵しているが、単一スレッドのみの実装を行い、並列化は行わなかった。
 
-\begin {空欄ブロック}{4種類の手法を用い}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+4種類の手法を用い$G_{\text {mixi}}^n,（n = 50\text{K}, 100\text{K}, \ldots 1,000\text{K}）$を解析・比較した。 
+解析時間を表\ref{tbl: elapsed time}、図\ref{fig: compete time}に示す。
+CNM法が解析できた最大のデータセットは$G_{\text{mixi}}^{\text{1,000K}}$であり5.9時間の解析時間を要した。
+最も解析時間が短かった手法はHNで、$G_{\text{mixi}}^{\text{1,000K}}$に対して5分以内に解析することができた。
+HEとHE'は$G_{\text{mixi}}^{\text{1,000K}}$に対してそれぞれ、36分と3時間の解析時間だったが、HNよりも低速であるものの、データのサイズを考慮すれば十分に実用的である。
 
-\begin{figure}[htbp]
-\begin {空欄ブロック}{図5 実行時間比較}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+\begin {figure}[htbp]
+  \centerline {\includegraphics [width=0.80\linewidth]{fig5-all-etime-size.pdf}}
+  \caption {実行時間比較}
+  \label {fig: compete time}
 \end{figure}
 
 \begin {table}
@@ -343,14 +351,23 @@ $b = 2.13\pm0.104$と2次のオーダーで上昇することがわかった。�
 \end{figure}
 
 \begin {table}
-\begin {空欄ブロック}{表2 モジュール性の比較}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+  \caption {実行時間（秒）}
+  \label {tbl: compete module}
+  \begin {center}
+    \begin {tabular}{lrrrrr} \\ \hline
+          & 100K & 400K & 700K & 1M \\ \hline
+      \textbf {CNM}& 0.496 & 0.478 & NA & NA \\
+      \textbf {HE}  & 0.413  & 0.373  & 0.355  & 0.339 \\
+      \textbf {HE'} & 0.535  & 0.529 & 0.520 & 0.514 \\
+      \textbf {HN}  & 0.421 & 0.382 & 0.358  & 0.351 \\
+      \hline
+    \end {tabular}
+  \end {center}
 \end {table}
 
-\begin {空欄ブロック}{次にモジュール性の評価だが}
-修正箇所：この個所を適切に書き換えなさい。
-\end {空欄ブロック}
+次にモジュール性の評価だが、モジュール性の向上を最優先とするCNMアルゴリズムと比較し、われわれの手法では合併比率も考慮したために、モジュール性が悪化することを予想していた。
+しかし、表\ref{tbl: compete module}に見るように、HE'ではCNM法よりも若干であるがモジュール性が上回った。
+この結果より、HE'法では$G_{\text{mixi}}^{\text{1,000K}}$において、CNM法の7倍の速度性能を持ち、モジュール性においても8−11\%の向上が見られ、速度面・モジュール性の両面でCNM法を上回る事ができた。
 
 \begin {空欄ブロック}{HN法は、速度面において}
 修正箇所：この個所を適切に書き換えなさい。
